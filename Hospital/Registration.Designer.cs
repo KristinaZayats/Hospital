@@ -56,28 +56,29 @@ namespace Hospital
             // 
             // RegFullname
             // 
-            this.RegFullname.Location = new System.Drawing.Point(30, 68);
+            this.RegFullname.Location = new System.Drawing.Point(51, 68);
             this.RegFullname.Name = "RegFullname";
             this.RegFullname.Size = new System.Drawing.Size(399, 22);
             this.RegFullname.TabIndex = 0;
             // 
             // RegPhoneNumber
             // 
-            this.RegPhoneNumber.Location = new System.Drawing.Point(35, 310);
+            this.RegPhoneNumber.Location = new System.Drawing.Point(51, 295);
             this.RegPhoneNumber.Name = "RegPhoneNumber";
             this.RegPhoneNumber.Size = new System.Drawing.Size(396, 22);
             this.RegPhoneNumber.TabIndex = 1;
             // 
             // RegInsuranceNumber
             // 
-            this.RegInsuranceNumber.Location = new System.Drawing.Point(35, 387);
+            this.RegInsuranceNumber.Location = new System.Drawing.Point(51, 372);
             this.RegInsuranceNumber.Name = "RegInsuranceNumber";
             this.RegInsuranceNumber.Size = new System.Drawing.Size(399, 22);
             this.RegInsuranceNumber.TabIndex = 2;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(631, 34);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(641, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(244, 57);
             this.label1.TabIndex = 3;
@@ -85,11 +86,12 @@ namespace Hospital
             // 
             // label2
             // 
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(30, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(353, 31);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Введите ФИО";
+            this.label2.Text = "Введите ФИО:";
             // 
             // label3
             // 
@@ -100,81 +102,89 @@ namespace Hospital
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(30, 111);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(30, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(259, 34);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Введите дату рождения";
+            this.label4.Text = "Введите дату рождения:";
             // 
             // RegBirthdate
             // 
-            this.RegBirthdate.Location = new System.Drawing.Point(32, 150);
+            this.RegBirthdate.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RegBirthdate.Location = new System.Drawing.Point(51, 141);
             this.RegBirthdate.Name = "RegBirthdate";
             this.RegBirthdate.Size = new System.Drawing.Size(233, 22);
             this.RegBirthdate.TabIndex = 7;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(30, 186);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(30, 175);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(337, 36);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Введите адрес";
+            this.label5.Text = "Введите адрес:";
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(30, 269);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(30, 257);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(313, 20);
+            this.label6.Size = new System.Drawing.Size(353, 26);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Введите свой номер телефона";
+            this.label6.Text = "Введите свой номер телефона:";
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(33, 351);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(30, 336);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(287, 33);
+            this.label7.Size = new System.Drawing.Size(382, 33);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Введите номер страхового полиса";
+            this.label7.Text = "Введите номер страхового полиса:";
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(35, 431);
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(35, 411);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(334, 23);
+            this.label8.Size = new System.Drawing.Size(394, 27);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Введите адрес электронной почты";
+            this.label8.Text = "Введите адрес электронной почты:";
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(35, 489);
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(35, 490);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(298, 26);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Выберите пол";
+            this.label9.Text = "Выберите пол:";
             // 
             // RegAddress
             // 
-            this.RegAddress.Location = new System.Drawing.Point(35, 225);
+            this.RegAddress.Location = new System.Drawing.Point(51, 214);
             this.RegAddress.Name = "RegAddress";
             this.RegAddress.Size = new System.Drawing.Size(600, 22);
             this.RegAddress.TabIndex = 13;
             // 
             // RegEmail
             // 
-            this.RegEmail.Location = new System.Drawing.Point(39, 460);
+            this.RegEmail.Location = new System.Drawing.Point(51, 453);
             this.RegEmail.Name = "RegEmail";
             this.RegEmail.Size = new System.Drawing.Size(394, 22);
             this.RegEmail.TabIndex = 14;
             // 
             // RegSex
             // 
+            this.RegSex.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RegSex.FormattingEnabled = true;
-            this.RegSex.ItemHeight = 16;
+            this.RegSex.ItemHeight = 23;
             this.RegSex.Items.AddRange(new object[] { "Женский", "Мужской" });
-            this.RegSex.Location = new System.Drawing.Point(35, 515);
+            this.RegSex.Location = new System.Drawing.Point(51, 534);
             this.RegSex.Name = "RegSex";
-            this.RegSex.Size = new System.Drawing.Size(219, 52);
+            this.RegSex.Size = new System.Drawing.Size(219, 50);
             this.RegSex.TabIndex = 15;
             // 
             // RegSubmit
@@ -182,7 +192,7 @@ namespace Hospital
             this.RegSubmit.BackColor = System.Drawing.SystemColors.Desktop;
             this.RegSubmit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RegSubmit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.RegSubmit.Location = new System.Drawing.Point(291, 611);
+            this.RegSubmit.Location = new System.Drawing.Point(338, 593);
             this.RegSubmit.Name = "RegSubmit";
             this.RegSubmit.Size = new System.Drawing.Size(264, 92);
             this.RegSubmit.TabIndex = 16;
@@ -192,33 +202,35 @@ namespace Hospital
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(584, 409);
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(558, 394);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(291, 25);
             this.label10.TabIndex = 17;
-            this.label10.Text = "Введите логин";
+            this.label10.Text = "Введите логин:";
             // 
             // RegLogin
             // 
-            this.RegLogin.Location = new System.Drawing.Point(584, 449);
+            this.RegLogin.Location = new System.Drawing.Point(571, 433);
             this.RegLogin.Name = "RegLogin";
             this.RegLogin.Size = new System.Drawing.Size(278, 22);
             this.RegLogin.TabIndex = 18;
             // 
             // RegPassword
             // 
-            this.RegPassword.Location = new System.Drawing.Point(584, 524);
+            this.RegPassword.Location = new System.Drawing.Point(571, 509);
             this.RegPassword.Name = "RegPassword";
-            this.RegPassword.Size = new System.Drawing.Size(275, 22);
+            this.RegPassword.Size = new System.Drawing.Size(278, 22);
             this.RegPassword.TabIndex = 19;
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(584, 489);
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(558, 474);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(185, 32);
             this.label11.TabIndex = 20;
-            this.label11.Text = "Введите пароль";
+            this.label11.Text = "Введите пароль:";
             // 
             // Registration
             // 
