@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -17,19 +10,24 @@ namespace Hospital
         public Login()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var registration = new Registration();
-            this.Hide();
+            Hide();
             registration.ShowDialog();
-            this.Close();
+            Close();
         }
 
         private void LogSubmit_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=127.0.0.1;database=hospital;uid=root;password=;";
+            if (File.Exists("login.txt"))
+            {
+                File.Delete("login.txt");
+            }
+            string connectionString = "server=127.0.0.1;database=health;uid=root;password=;";
             
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -48,15 +46,14 @@ namespace Hospital
                 if (count > 0)
                 {
                     MessageBox.Show(@"Вход выполнен успешно!", @"Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    var idk = new idk();
-                    this.Hide();
-                    idk.ShowDialog();
-                    this.Close();
                     using (StreamWriter writer = new StreamWriter("login.txt"))
                     {
                         writer.WriteLine(login);
                     }
+                    var appointmentBuilder = new AppointmentBuilder();
+                    Hide();
+                    appointmentBuilder.ShowDialog();
+                    Close();
                 }
                 
                 else

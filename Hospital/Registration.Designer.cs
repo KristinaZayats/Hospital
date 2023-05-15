@@ -52,6 +52,7 @@ namespace Hospital
             this.RegLogin = new System.Windows.Forms.TextBox();
             this.RegPassword = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RegFullname
@@ -232,11 +233,25 @@ namespace Hospital
             this.label11.TabIndex = 20;
             this.label11.Text = "Введите пароль:";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(646, 102);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(203, 61);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Назад";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(915, 715);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.RegPassword);
             this.Controls.Add(this.RegLogin);
@@ -263,6 +278,8 @@ namespace Hospital
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Button button1;
 
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox RegLogin;
